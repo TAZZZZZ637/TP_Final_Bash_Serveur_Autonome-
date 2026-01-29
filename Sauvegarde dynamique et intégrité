@@ -1,0 +1,10 @@
+REP="/usr/local/bin"
+if [ $# -ne 0 ]; then
+    echo "Erreur : aucun argument attendu" >&2
+    exit 102
+fi
+if [ ! -d "$REP" ]; then
+    echo "Erreur : le repertoire $REP n'existe pas" >&2
+    exit 102
+fi
+echo "Repertoire valide"

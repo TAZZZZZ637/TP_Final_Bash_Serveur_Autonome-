@@ -1,3 +1,4 @@
+#Mathis
 JOURS=60
 tmp_users="/tmp/users_JOURS.txt"
 find /home -mindepth 1 -maxdepth 1 -type d -atime +$JOURS > "$tmp_users"
